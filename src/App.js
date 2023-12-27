@@ -9,6 +9,8 @@ const App = () => {
   const [username, setUsername] = useState(null);
   const [userRole, setUserRole] = useState(null);
 
+  console.log("username", username, userRole);
+
   useEffect(() => {
     if (token) {
       fetch("https://ticketing-system-backend-eight.vercel.app/api/tickets", {
